@@ -2,26 +2,19 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-===========
-Quant merge
-===========
+============================
+Stock Quant Reserved Qty UoM
+============================
 
-Odoo splits quants each time a reservation is done: this module makes Odoo
-merge them back if they still meet the following requirements:
-
-* same product
-* same serial number/lot
-* same location
-* same package
+This module allows to display the quantity of a quant in the unit of measure
+defined in the reservation move.
 
 Usage
 =====
 
-The merge is done automatically when a reservation is undone. No user intervention is needed.
-
 .. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas
    :alt: Try me on Runbot
-   :target: https://runbot.odoo-community.org/runbot/153/9.0
+   :target: https://runbot.odoo-community.org/runbot/153/10.0
 
 Bug Tracker
 ===========
@@ -34,13 +27,15 @@ help us smashing it by providing a detailed and welcomed feedback.
 Credits
 =======
 
+Images
+------
+
+* Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
+
 Contributors
 ------------
-* Oihane Crucelaegui <oihanecrucelaegi@avanzosc.es>
-* Pedro M. Baeza <pedro.baeza@tecnativa.com>
-* Ana Juaristi <ajuaristio@gmail.com>
-* Lionel Sausin <ls@numerigraphe.com>
-* Lois Rilo <lois.rilo@eficent.com>
+
+* Jordi Ballester Alomar <jordi.ballester@eficent.com>
 
 Maintainer
 ----------
