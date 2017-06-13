@@ -36,14 +36,15 @@ addon | version | summary
 [stock_available_immediately](stock_available_immediately/) | 9.0.1.1.0 | Ignore planned receptions in quantity available to promise
 [stock_available_mrp](stock_available_mrp/) | 9.0.1.0.0 | Consider the production potential is available to promise
 [stock_available_unreserved](stock_available_unreserved/) | 9.0.1.0.0 | Quantity of stock available for inmediate use
-[stock_cycle_count](stock_cycle_count/) | 9.0.1.0.0 | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user
+[stock_cycle_count](stock_cycle_count/) | 9.0.1.1.0 | Adds the capability to schedule cycle counts in a warehouse through different rules defined by the user
 [stock_inventory_discrepancy](stock_inventory_discrepancy/) | 9.0.1.0.0 | Adds the capability to show the discrepancy of every line in an inventory and to block the inventory validation when the discrepancy is over a user defined threshold.
 [stock_inventory_exclude_sublocation](stock_inventory_exclude_sublocation/) | 9.0.1.0.0 | Allow to perform inventories of a location without including its child locations.
+[stock_inventory_lockdown](stock_inventory_lockdown/) | 9.0.1.0.0 | Lock down stock locations during inventories.
 [stock_inventory_revaluation](stock_inventory_revaluation/) | 9.0.1.0.0 | Introduces inventory revaluation as single point to change the valuation of products.
 [stock_inventory_verification_request](stock_inventory_verification_request/) | 9.0.1.0.0 | Adds the capability to request a Slot Verification when a inventory is Pending to Approve
 [stock_location_area_data](stock_location_area_data/) | 9.0.1.0.0 | Add surface units of measure
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 9.0.1.0.0 | Add a MTS+MTO route
-[stock_orderpoint_generator](stock_orderpoint_generator/) | 9.0.1.0.0 | Mass configuration of stock order points
+[stock_orderpoint_generator](stock_orderpoint_generator/) | 9.0.1.1.0 | Mass configuration of stock order points
 [stock_orderpoint_manual_procurement](stock_orderpoint_manual_procurement/) | 9.0.1.0.0 | Allows to create procurement orders from orderpoints instead of relying only on the scheduler
 [stock_orderpoint_uom](stock_orderpoint_uom/) | 9.0.1.0.0 | Allows to create procurement orders in the UoM indicated in the orderpoint
 [stock_partner_lot](stock_partner_lot/) | 9.0.1.0.0 | Show lots on the partners that own them
@@ -51,9 +52,11 @@ addon | version | summary
 [stock_quant_manual_assign](stock_quant_manual_assign/) | 9.0.1.0.0 | Stock - Manual Quant Assignment
 [stock_quant_merge](stock_quant_merge/) | 9.0.1.0.0 | Stock - Quant merge
 [stock_quant_reserved_qty_uom](stock_quant_reserved_qty_uom/) | 9.0.1.0.0 | Stock Quant Reserved Qty UoM
+[stock_removal_location_by_priority](stock_removal_location_by_priority/) | 9.0.1.0.0 | Establish a removal priority on stock locations.
 [stock_reserve](stock_reserve/) | 9.0.1.0.0 | Stock reservations on products
 [stock_valuation_account_manual_adjustment](stock_valuation_account_manual_adjustment/) | 9.0.1.0.0 | Shows in the product inventory stock value and the accounting value and allows to reconcile them
 [stock_warehouse_orderpoint_stock_info](stock_warehouse_orderpoint_stock_info/) | 9.0.1.0.0 | Reordering rules stock info
+[stock_warehouse_orderpoint_stock_info_unreserved](stock_warehouse_orderpoint_stock_info_unreserved/) | 9.0.1.0.0 | Reordering rules stock info unreserved
 
 
 Unported addons

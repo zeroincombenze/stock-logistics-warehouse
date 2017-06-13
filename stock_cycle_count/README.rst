@@ -18,6 +18,7 @@ can propose Zero-Confirmations which are simple and opportunistic counts to
 check whether a locations has actually became empty or not.
 
 With this strategy it is possible to:
+
 * Remove the need to perform full physical inventories and to stop the
   production in the warehouse.
 * Measure the accuracy of the inventory records and improve it.
@@ -31,19 +32,26 @@ To install this module, you need to:
 * Download this module to your addons path.
 * Install the module in your database.
 
+Recommendations
+---------------
+
+It is highly recommended to use this module in conjunction with:
+
+* `stock_inventory_verification_request`: Adds the capability to request Slot
+  Verifications.
+* `stock_inventory_lockdown`: Lock down locations during inventories.
+
 Configuration
 =============
 
 You can configure the rules to compute the cycle count, acting as follow:
 
-#. Go to "Inventory > Configuration > Cycle Count Rules"
+#. Go to *Inventory > Configuration > Cycle Count Rules*.
 #. Create as much cycle count rules as you want.
-#. Assign the rules to the Warehouse where you want to apply the rules in.
-#. Set a "Cycle Count Planning Horizon" for each warehouse.
-
-.. figure:: path/to/local/image.png
-   :alt: alternative description
-   :width: 600 px
+#. Assign the rules to the Warehouse or zones where you want to apply the rules
+   in.
+#. Go to *Inventory > Configuration > Warehouse Management > Warehouses* and
+   set a *Cycle Count Planning Horizon* for each warehouse.
 
 Usage
 =====
@@ -53,20 +61,18 @@ is described below.
 
 #. Go to "Inventory > Configuration > Warehouse Management > Warehouses".
 #. Select all the warehouses you want to compute the rules in.
-#. Click on "Action" and then in "Compute Cycle Count Rules".
+#. Click on "Action" and then in "Compute Cycle Count Rules". (**note**: A
+   cron job will do this for every warehouse daily.)
 #. Go to "Inventory Control > Cycle Counts".
-#. Select a Cycle Count planned an confirm it, this will create a draft
+#. Select a planned Cycle Count and confirm it, this will create a draft
    Inventory Adjustment.
-#. In the right top corner of the form view you can access the generated
+#. In the right top corner of the form view you can access to the generated
    Inventory Adjustment.
 #. Proceed with the Inventory Adjustment as usual.
 
 .. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas
    :alt: Try me on Runbot
    :target: https://runbot.odoo-community.org/runbot/153/9.0
-
-.. repo_id is available in https://github.com/OCA/stock-logistics-warehouse
-.. branch is "9.0" for example
 
 
 Bug Tracker
