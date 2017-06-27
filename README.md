@@ -31,6 +31,7 @@ addon | version | summary
 --- | --- | ---
 [account_move_line_product](account_move_line_product/) | 9.0.1.0.0 | Displays the product in the journal entries and items
 [account_move_line_stock_info](account_move_line_stock_info/) | 9.0.1.0.0 | Account Move Line Stock Move
+[procurement_auto_create_group](procurement_auto_create_group/) | 9.0.1.0.0 | Procurement Auto Create Group
 [stock_account_quant_merge](stock_account_quant_merge/) | 9.0.1.0.0 | Stock Account - Quant merge
 [stock_available](stock_available/) | 9.0.1.1.0 | Stock available to promise
 [stock_available_immediately](stock_available_immediately/) | 9.0.1.1.0 | Ignore planned receptions in quantity available to promise
@@ -43,6 +44,7 @@ addon | version | summary
 [stock_inventory_revaluation](stock_inventory_revaluation/) | 9.0.1.0.0 | Introduces inventory revaluation as single point to change the valuation of products.
 [stock_inventory_verification_request](stock_inventory_verification_request/) | 9.0.1.0.0 | Adds the capability to request a Slot Verification when a inventory is Pending to Approve
 [stock_location_area_data](stock_location_area_data/) | 9.0.1.0.0 | Add surface units of measure
+[stock_move_partner_info](stock_move_partner_info/) | 9.0.1.0.0 | Stock Move Partner Info
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 9.0.1.0.0 | Add a MTS+MTO route
 [stock_orderpoint_generator](stock_orderpoint_generator/) | 9.0.1.1.0 | Mass configuration of stock order points
 [stock_orderpoint_manual_procurement](stock_orderpoint_manual_procurement/) | 9.0.1.0.0 | Allows to create procurement orders from orderpoints instead of relying only on the scheduler
