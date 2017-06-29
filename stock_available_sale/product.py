@@ -20,7 +20,7 @@
 
 from openerp import SUPERUSER_ID
 from openerp.osv import orm, fields
-import openerp.addons.decimal_precision as dp
+import decimal_precision as dp
 
 # Function which uses the pool to call the method from the other modules too.
 from openerp.addons.stock_available import _product_available_fnct
