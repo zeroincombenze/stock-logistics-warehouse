@@ -3,12 +3,15 @@
 [![Coverage Status](https://coveralls.io/repos/github/zeroincombenze/stock-logistics-warehouse/badge.svg?branch=10.0)](https://coveralls.io/github/zeroincombenze/stock-logistics-warehouse?branch=10.0)
 [![codecov](https://codecov.io/gh/zeroincombenze/stock-logistics-warehouse/branch/10.0/graph/badge.svg)](https://codecov.io/gh/zeroincombenze/stock-logistics-warehouse/branch/10.0)
 [![OCA_project](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-oca-10.svg)](https://github.com/OCA/stock-logistics-warehouse/tree/10.0)
-[![Tech Doc](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-10.svg)](http://wiki.zeroincombenze.org/en/Odoo/dev/10.0)
-[![Help](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-help-10.svg)](http://wiki.zeroincombenze.org/en/Odoo/10.0/stock-)
+[![Tech Doc](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-10.svg)](http://wiki.zeroincombenze.org/en/Odoo/10.0/dev)
+[![Help](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-help-10.svg)](http://wiki.zeroincombenze.org/en/Odoo/10.0/man/LO)
 [![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](http://erp10.zeroincombenze.it)
 
+
+[![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
+================================================================================================
+
 Odoo Stock Logistic Warehouse
-=============================
 
 
 This project aim to deal with modules related to the management of warehouses. You'll find modules that:
@@ -26,7 +29,6 @@ Please don't hesitate to suggest one of your module to this project. Also, you m
 [//]: # (addons)
 
 Available addons
-----------------
 addon | version | summary
 --- | --- | ---
 [account_move_line_product](account_move_line_product/) | 10.0.1.0.0 | Displays the product in the journal entries and items
@@ -43,7 +45,6 @@ addon | version | summary
 
 
 Unported addons
----------------
 addon | version | summary
 --- | --- | ---
 [base_product_merge](base_product_merge/) | 1.0 (unported) | Base Products Merge
