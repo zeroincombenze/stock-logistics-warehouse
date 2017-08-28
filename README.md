@@ -10,6 +10,7 @@
 
 [![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
 ================================================================================================
+================================================================================================
 
 Odoo Stock Logistic Warehouse
 
@@ -28,7 +29,9 @@ Please don't hesitate to suggest one of your module to this project. Also, you m
 
 [//]: # (addons)
 
+
 Available addons
+----------------
 addon | version | summary
 --- | --- | ---
 [account_move_line_product](account_move_line_product/) | 10.0.1.0.0 | Displays the product in the journal entries and items
@@ -46,6 +49,7 @@ addon | version | summary
 
 
 Unported addons
+---------------
 addon | version | summary
 --- | --- | ---
 [base_product_merge](base_product_merge/) | 1.0 (unported) | Base Products Merge

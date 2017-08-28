@@ -1,10 +1,20 @@
-.. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
+[![Build Status](https://travis-ci.org/zeroincombenze/stock-logistics-warehouse.svg?branch=10.0)](https://travis-ci.org/zeroincombenze/stock-logistics-warehouse)
+[![license agpl](https://img.shields.io/badge/licence-AGPL--3-blue.svg)](http://www.gnu.org/licenses/agpl-3.0.html)
+[![Coverage Status](https://coveralls.io/repos/github/zeroincombenze/stock-logistics-warehouse/badge.svg?branch=10.0)](https://coveralls.io/github/zeroincombenze/stock-logistics-warehouse?branch=10.0)
+[![codecov](https://codecov.io/gh/zeroincombenze/stock-logistics-warehouse/branch/10.0/graph/badge.svg)](https://codecov.io/gh/zeroincombenze/stock-logistics-warehouse/branch/10.0)
+[![OCA_project](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-oca-10.svg)](https://github.com/OCA/stock-logistics-warehouse/tree/10.0)
+[![Tech Doc](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-10.svg)](http://wiki.zeroincombenze.org/en/Odoo/10.0/dev)
+[![Help](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-help-10.svg)](http://wiki.zeroincombenze.org/en/Odoo/10.0/man/LO)
+[![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](http://erp10.zeroincombenze.it)
+
+
+[![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
+
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
+================================================================
    :alt: License: AGPL-3
 
-=========================================================
 Consider the production potential is available to promise
-=========================================================
 
 This module takes the potential quantities available for Products into account in
 the quantity available to promise, where the "Potential quantity" is the
@@ -13,7 +23,15 @@ By configuration, the "Potential quantity" can be computed based on other produc
 For example, "Potential quantity" can be the quantity that can be manufactured
 with the components available to promise.
 
+Installation
+------------
+
+Configuration
+-------------
+
 Usage
+-----
+
 =====
 
 .. image:: https://odoo-community.org/website/image/ir.attachment/5784_f2813bd/datas
@@ -21,10 +39,10 @@ Usage
    :target: https://runbot.odoo-community.org/runbot/153/8.0
 
 Known issues / Roadmap
-======================
+----------------------
+
 
 Known issues
-------------
 The manufacturing delays are not taken into account : this module assumes that
 if you have components in stock goods, you can manufacture finished goods
 quickly enough.
@@ -37,19 +55,18 @@ If a product has several variants, only the variant with the biggest potential w
 For example, even if you actually have enough components to make 10 iPads 16Go AND 42 iPads 32Go, we'll consider that you can promise only 42 iPads.
 
 Removed features
-----------------
 Previous versions of this module used to let programmers demand to get the potential quantity in an arbitrary Unit of Measure using the `context`. This feature was present in the standard computations too until v8.0, but it has been dropped from the standard from v8.0 on.
 For the sake of consistency the potential quantity is now always reported in the product's main Unit of Measure too.
 
 Roadmap
--------
 Possible improvements for future versions:
 * take manufacturing delays into account: we should not promise goods to customers if they want them delivered earlier that we can make them
 * Compute the quantity of finished product that can be made directly on each Bill of Material: this would be useful for production managers, and may make the computations faster by avoiding to compute the same BoM several times when several variants share the same BoM
 * add an option (probably as a sub-module) to consider all raw materials as available if they can be bought from the suppliers in time for the manufacturing.
 
 Bug Tracker
-===========
+-----------
+
 
 Bugs are tracked on `GitHub Issues
 <https://github.com/OCA/stock-logistics-warehouse/issues>`_. In case of trouble, please
@@ -61,17 +78,22 @@ stock_available%0Aversion:%20
 8.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Credits
-=======
+-------
 
-Contributors
-------------
+
+[![Odoo Italia Associazione]]
+
+### Contributors
+
 * Loïc Bellier (Numérigraphe) <lb@numerigraphe.com>
 * Lionel Sausin (Numérigraphe) <ls@numerigraphe.com>
 * many thanks to Graeme Gellatly for his advice and code review
 * Laurent Mignon <laurent.mignon@acsone.eu>
 
-Maintainer
-----------
+### Funders
+
+### Maintainer
+
 
 .. image:: https://odoo-community.org/logo.png
    :alt: Odoo Community Association
@@ -84,3 +106,27 @@ mission is to support the collaborative development of Odoo features and
 promote its widespread use.
 
 To contribute to this module, please visit http://odoo-community.org.
+
+[//]: # (copyright)
+
+----
+
+**Odoo** is a trademark of [Odoo S.A.](https://www.odoo.com/) (formerly OpenERP, formerly TinyERP)
+
+**OCA**, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit organization whose
+mission is to support the collaborative development of Odoo features and
+promote its widespread use.
+
+**zeroincombenze®** is a trademark of [SHS-AV s.r.l.](http://www.shs-av.com/)
+which distributes and promotes **Odoo** ready-to-use on its own cloud infrastructure.
+[Zeroincombenze® distribution](http://wiki.zeroincombenze.org/en/Odoo)
+is mainly designed for Italian law and markeplace.
+Everytime, every Odoo DB and customized code can be deployed on local server too.
+
+[//]: # (end copyright)
+
+[//]: # (addons)
+
+[//]: # (end addons)
+
+[![chat with us](https://www.shs-av.com/wp-content/chat_with_us.gif)](https://tawk.to/85d4f6e06e68dd4e358797643fe5ee67540e408b)

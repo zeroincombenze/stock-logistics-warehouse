@@ -1,10 +1,20 @@
-.. image:: https://img.shields.io/badge/licence-AGPL--3-blue.svg
+[![Build Status](https://travis-ci.org/zeroincombenze/addons.svg?branch=10.0)](https://travis-ci.org/zeroincombenze/addons)
+[![license agpl](https://img.shields.io/badge/licence-AGPL--3-blue.svg)](http://www.gnu.org/licenses/agpl-3.0.html)
+[![Coverage Status](https://coveralls.io/repos/github/zeroincombenze/addons/badge.svg?branch=10.0)](https://coveralls.io/github/zeroincombenze/addons?branch=10.0)
+[![codecov](https://codecov.io/gh/zeroincombenze/addons/branch/10.0/graph/badge.svg)](https://codecov.io/gh/zeroincombenze/addons/branch/10.0)
+[![OCA_project](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-oca-10.svg)](https://github.com/OCA/addons/tree/10.0)
+[![Tech Doc](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-docs-10.svg)](http://wiki.zeroincombenze.org/en/Odoo/10.0/dev)
+[![Help](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-help-10.svg)](http://wiki.zeroincombenze.org/en/Odoo/10.0/man/)
+[![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](http://erp10.zeroincombenze.it)
+
+
+[![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
+
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
+================================================================
    :alt: License: AGPL-3
 
-==================
 Stock MTS+MTO Rule
-==================
 
 This module add a Make To Stock + Make to Order Route.
 
@@ -34,7 +44,15 @@ A sale Order is made for 3 products A.
 
 After validation, a purchase order with 2 products will be created.
 
+Installation
+------------
+
+Configuration
+-------------
+
 Usage
+-----
+
 =====
 
 You have to select the mts+mto route on the product form.
@@ -44,13 +62,10 @@ You should not select both the mts+mto route and the mto route.
    :alt: Try me on Runbot
    :target: https://runbot.odoo-community.org/runbot/153/10.0
 
-Configuration
-=============
 
 You have to select 'Use MTO+MTS rules' on the company's warehouse form.
 
 Known issues
-============
 
 If you cancel a delivery order and then recreate it from Recreate
 Delivery Order button in sale order form, then the stock level at the time of
@@ -58,8 +73,12 @@ the Re-Creation won't be taken into account. So if a purchase order was created
 when the sale order was first validated, a similar purchase order will be created
 during the Re-creation of the delivery order, even if not needed regarding the actual stock.
 
+Known issues / Roadmap
+----------------------
+
 Bug Tracker
-===========
+-----------
+
 
 Bugs are tracked on `GitHub Issues
 <https://github.com/OCA/stock-logistics-warehouse/issues>`_. In case of trouble, please
@@ -67,15 +86,20 @@ check there if your issue has already been reported. If you spotted it first,
 help us smashing it by providing a detailed and welcomed feedback.
 
 Credits
-=======
+-------
 
-Contributors
-------------
+
+[![Odoo Italia Associazione]]
+
+### Contributors
+
 
 * Florian da Costa <florian.dacosta@akretion.com>
 
-Maintainer
-----------
+### Funders
+
+### Maintainer
+
 
 .. image:: https://odoo-community.org/logo.png
    :alt: Odoo Community Association
@@ -88,3 +112,27 @@ mission is to support the collaborative development of Odoo features and
 promote its widespread use.
 
 To contribute to this module, please visit https://odoo-community.org.
+
+[//]: # (copyright)
+
+----
+
+**Odoo** is a trademark of [Odoo S.A.](https://www.odoo.com/) (formerly OpenERP, formerly TinyERP)
+
+**OCA**, or the [Odoo Community Association](http://odoo-community.org/), is a nonprofit organization whose
+mission is to support the collaborative development of Odoo features and
+promote its widespread use.
+
+**zeroincombenze®** is a trademark of [SHS-AV s.r.l.](http://www.shs-av.com/)
+which distributes and promotes **Odoo** ready-to-use on its own cloud infrastructure.
+[Zeroincombenze® distribution](http://wiki.zeroincombenze.org/en/Odoo)
+is mainly designed for Italian law and markeplace.
+Everytime, every Odoo DB and customized code can be deployed on local server too.
+
+[//]: # (end copyright)
+
+[//]: # (addons)
+
+[//]: # (end addons)
+
+[![chat with us](https://www.shs-av.com/wp-content/chat_with_us.gif)](https://tawk.to/85d4f6e06e68dd4e358797643fe5ee67540e408b)
