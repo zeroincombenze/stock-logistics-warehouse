@@ -8,7 +8,7 @@
 [![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](http://erp10.zeroincombenze.it)
 
 
-[![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
+[![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
 
 Features
 ========
@@ -24,15 +24,19 @@ Installation
 ------------
 
 
+
 To install this module, you just need to select the module and insure yourself dependencies are available
 
 Configuration
 -------------
 
 
+
 No particular configuration to use this module
 
 Usage
+-----
+
 -----
 
 =====
@@ -45,17 +49,22 @@ Known issues / Roadmap
 ----------------------
 
 
+
 * n/a
 
 Bug Tracker
 -----------
 
+
 Credits
 -------
 
+
 [![Odoo Italia Associazione]]
 
+
 ### Contributors
+
 
 
 * Adriana Ierfino <adriana.ierfino@savoirfairelinux.com>
@@ -69,6 +78,8 @@ Credits
 ### Funders
 
 ### Maintainer
+
+
 
 
 This module is maintained by Savoir-Faire Linux.

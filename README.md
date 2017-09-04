@@ -8,7 +8,7 @@
 [![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](http://erp10.zeroincombenze.it)
 
 
-[![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
+[![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
 ================================================================================================
 ================================================================================================
 
@@ -32,43 +32,43 @@ Please don't hesitate to suggest one of your module to this project. Also, you m
 
 Available addons
 ----------------
-addon | version | summary
---- | --- | ---
-[account_move_line_product](account_move_line_product/) | 10.0.1.0.0 | Displays the product in the journal entries and items
-[account_move_line_stock_info](account_move_line_stock_info/) | 10.0.1.0.0 | Account Move Line Stock Move
-[stock_available](stock_available/) | 10.0.1.0.0 | Stock available to promise
-[stock_available_immediately](stock_available_immediately/) | 10.0.1.0.0 | Ignore planned receptions in quantity available to promise
-[stock_available_unreserved](stock_available_unreserved/) | 10.0.1.0.0 | Quantity of stock available for immediate use
-[stock_change_qty_reason](stock_change_qty_reason/) | 10.0.1.0.0 | Stock Quantity Change Reason
-[stock_mts_mto_rule](stock_mts_mto_rule/) | 10.0.1.0.0 | Add a MTS+MTO route
-[stock_operation_package_mandatory](stock_operation_package_mandatory/) | 10.0.1.0.0 | Makes destination package mandatory on stock pack operations
-[stock_putaway_product](stock_putaway_product/) | 10.0.1.0.0 | Set a product location and put-away strategy per product
-[stock_quant_merge](stock_quant_merge/) | 10.0.1.0.0 | Stock - Quant merge
-[stock_quant_reserved_qty_uom](stock_quant_reserved_qty_uom/) | 10.0.1.0.0 | Stock Quant Reserved Qty UoM
-[stock_reserve](stock_reserve/) | 10.0.1.0.0 | Stock reservations on products
+addon | version | OCA version | summary
+--- | --- | --- | ---
+[account_move_line_product](account_move_line_product/) | 10.0.1.0.0 | :repeat: | Displays the product in the journal entries and items
+[account_move_line_stock_info](account_move_line_stock_info/) | 10.0.1.0.0 | :repeat: | Account Move Line Stock Move
+[stock_available](stock_available/) | 10.0.1.0.0 | :repeat: | Stock available to promise
+[stock_available_immediately](stock_available_immediately/) | 10.0.1.0.0 | :repeat: | Ignore planned receptions in quantity available to promise
+[stock_available_unreserved](stock_available_unreserved/) | 10.0.1.0.0 | :repeat: | Quantity of stock available for immediate use
+[stock_change_qty_reason](stock_change_qty_reason/) | 10.0.1.0.0 | :repeat: | Stock Quantity Change Reason
+[stock_mts_mto_rule](stock_mts_mto_rule/) | 10.0.1.0.0 | :repeat: | Add a MTS+MTO route
+[stock_operation_package_mandatory](stock_operation_package_mandatory/) | 10.0.1.0.0 | :repeat: | Makes destination package mandatory on stock pack operations
+[stock_putaway_product](stock_putaway_product/) | 10.0.1.0.0 | :repeat: | Set a product location and put-away strategy per product
+[stock_quant_merge](stock_quant_merge/) | 10.0.1.0.0 | :repeat: | Stock - Quant merge
+[stock_quant_reserved_qty_uom](stock_quant_reserved_qty_uom/) | 10.0.1.0.0 | :repeat: | Stock Quant Reserved Qty UoM
+[stock_reserve](stock_reserve/) | 10.0.1.0.0 | :repeat: | Stock reservations on products
 
 
 Unported addons
 ---------------
-addon | version | summary
---- | --- | ---
-[base_product_merge](base_product_merge/) | 1.0 (unported) | Base Products Merge
-[configurable_stock_level](configurable_stock_level/) | 0.1 (unported) | name
-[partner_location_auto_create](partner_location_auto_create/) | 0.1 (unported) | Partner Location Auto Create
-[stock_available_mrp](stock_available_mrp/) | 9.0.1.0.0 (unported) | Consider the production potential is available to promise
-[stock_available_sale](stock_available_sale/) | 2.0 (unported) | Quotations in quantity available to promise
-[stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 8.0.1.0.0 (unported) | More filters for inventory adjustments
-[stock_location_area_data](stock_location_area_data/) | 8.0.0.1.0 (unported) | Add surface units of measure
-[stock_location_area_management](stock_location_area_management/) | 8.0.0.1.0 (unported) | Enter a location's area based on different units of measure
-[stock_location_ownership](stock_location_ownership/) | 8.0.0.1.0 (unported) | Stock Location Ownership
-[stock_lot_valuation](stock_lot_valuation/) | 0.1 (unported) | Lot Valuation
-[stock_move_location](stock_move_location/) | 1.0 (unported) | Move Stock Location
-[stock_optional_valuation](stock_optional_valuation/) | 0.1 (unported) | Stock optional valuation
-[stock_orderpoint_creator](stock_orderpoint_creator/) | 1.0 (unported) | Configuration of order point in mass
-[stock_partner_lot](stock_partner_lot/) | 9.0.1.0.0 (unported) | Show lots on the partners that own them
-[stock_quant_manual_assign](stock_quant_manual_assign/) | 8.0.1.0.0 (unported) | Stock - Manual assignment of quants
-[stock_reord_rule](stock_reord_rule/) | 0.2 (unported) | Improved reordering rules
-[stock_reserve_sale](stock_reserve_sale/) | 8.0.1.0.0 (unported) | Stock Reserve Sales
+addon | version | OCA version | summary
+--- | --- | --- | ---
+[base_product_merge](base_product_merge/) | 1.0 (unported) | :repeat: | Base Products Merge
+[configurable_stock_level](configurable_stock_level/) | 0.1 (unported) | :repeat: | name
+[partner_location_auto_create](partner_location_auto_create/) | 0.1 (unported) | :repeat: | Partner Location Auto Create
+[stock_available_mrp](stock_available_mrp/) | 9.0.1.0.0 (unported) | :repeat: | Consider the production potential is available to promise
+[stock_available_sale](stock_available_sale/) | 2.0 (unported) | :repeat: | Quotations in quantity available to promise
+[stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 8.0.1.0.0 (unported) | :repeat: | More filters for inventory adjustments
+[stock_location_area_data](stock_location_area_data/) | 8.0.0.1.0 (unported) | :repeat: | Add surface units of measure
+[stock_location_area_management](stock_location_area_management/) | 8.0.0.1.0 (unported) | :repeat: | Enter a location's area based on different units of measure
+[stock_location_ownership](stock_location_ownership/) | 8.0.0.1.0 (unported) | :repeat: | Stock Location Ownership
+[stock_lot_valuation](stock_lot_valuation/) | 0.1 (unported) | :repeat: | Lot Valuation
+[stock_move_location](stock_move_location/) | 1.0 (unported) | :repeat: | Move Stock Location
+[stock_optional_valuation](stock_optional_valuation/) | 0.1 (unported) | :repeat: | Stock optional valuation
+[stock_orderpoint_creator](stock_orderpoint_creator/) | 1.0 (unported) | :repeat: | Configuration of order point in mass
+[stock_partner_lot](stock_partner_lot/) | 9.0.1.0.0 (unported) | :repeat: | Show lots on the partners that own them
+[stock_quant_manual_assign](stock_quant_manual_assign/) | 8.0.1.0.0 (unported) | :repeat: | Stock - Manual assignment of quants
+[stock_reord_rule](stock_reord_rule/) | 0.2 (unported) | :repeat: | Improved reordering rules
+[stock_reserve_sale](stock_reserve_sale/) | 8.0.1.0.0 (unported) | :repeat: | Stock Reserve Sales
 
 [//]: # (end addons)
 

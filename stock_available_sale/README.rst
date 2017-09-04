@@ -8,7 +8,7 @@
 [![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](http://erp10.zeroincombenze.it)
 
 
-[![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
+[![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
 
 Quotations in quantity available to promise
 ===========================================
@@ -22,14 +22,19 @@ Sale Quotations, taking the context's shop or warehouse into account.
 Installation
 ------------
 
+
 Configuration
 -------------
+
 
 Usage
 -----
 
+-----
+
 Known issues / Roadmap
 ----------------------
+
 
 
 This module does not warn salespersons when the quantity available to promise
@@ -40,13 +45,17 @@ Work to add this feature is underway: https://github.com/OCA/stock-logistics-war
 Bug Tracker
 -----------
 
+
 Credits
 -------
 
 
+
 [![Odoo Italia Associazione]]
 
+
 ### Contributors
+
 
 
 * Loïc Bellier (Numérigraphe) <lb@numerigraphe.com>
@@ -55,6 +64,8 @@ Credits
 ### Funders
 
 ### Maintainer
+
+
 
 
 .. image:: http://odoo-community.org/logo.png
