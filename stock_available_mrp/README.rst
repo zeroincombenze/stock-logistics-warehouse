@@ -8,7 +8,7 @@
 [![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-7.svg)](http://erp7.zeroincombenze.it)
 
 
-[![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
+[![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
 
 Consider the production potential is available to promise
 =========================================================
@@ -39,25 +39,34 @@ Roadmap
 Installation
 ------------
 
+
 Configuration
 -------------
 
+
 Usage
+-----
+
 -----
 
 Known issues / Roadmap
 ----------------------
 
+
 Bug Tracker
 -----------
+
 
 Credits
 -------
 
 
+
 [![Odoo Italia Associazione]]
 
+
 ### Contributors
+
 
 * Loïc Bellier (Numérigraphe) <lb@numerigraphe.com>
 * Lionel Sausin (Numérigraphe) <ls@numerigraphe.com>
@@ -65,6 +74,8 @@ Credits
 ### Funders
 
 ### Maintainer
+
+
 
 
 .. image:: http://odoo-community.org/logo.png

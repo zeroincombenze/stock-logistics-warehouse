@@ -8,7 +8,7 @@
 [![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-7.svg)](http://erp7.zeroincombenze.it)
 
 
-[![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
+[![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
 ================================================================================================
 ================================================================================================
 
@@ -51,22 +51,22 @@ Available addons
 ----------------
 addon | version | OCA version | summary
 --- | --- | --- | ---
-[stock_available](stock_available/) | 2.0 |  N/D  | Stock available to promise
-[stock_available_immediately](stock_available_immediately/) | 2.0 |  N/D  | Ignore planned receptions in quantity available to promise
-[stock_available_mrp](stock_available_mrp/) | 2.0 |  N/D  | Consider the production potential is available to promise
-[stock_available_sale](stock_available_sale/) | 2.0 |  N/D  | Quotations in quantity available to promise
-[stock_inventory_hierarchical](stock_inventory_hierarchical/) | 1.1 |  N/D  | Group several Physical Inventories in a master inventory
-[stock_inventory_hierarchical_location](stock_inventory_hierarchical_location/) | 1.1 |  N/D  | Extra consistency checks
-[stock_inventory_location](stock_inventory_location/) | 1.1 |  N/D  | Remove from the stock what is not in the Physical Inventory.
-[stock_location_inactive](stock_location_inactive/) | 0.1 |  N/D  | Stock Location Inactive
-[stock_location_ownership](stock_location_ownership/) | 0.1 |  N/D  | Stock Location Ownership
-[stock_location_search_stock](stock_location_search_stock/) | 1.0 |  N/D  | Stock Location Search Stock Quantities
-[stock_lot_valuation](stock_lot_valuation/) | 0.1 |  N/D  | Lot Valuation
-[stock_optional_valuation](stock_optional_valuation/) | 0.1 |  N/D  | Stock optional valuation
-[stock_orderpoint_generator](stock_orderpoint_generator/) | 1.0 |  N/D  | Mass configuration of stock order points
-[stock_reord_rule](stock_reord_rule/) | 0.2 |  N/D  | Improved reordering rules
-[stock_reserve](stock_reserve/) | 0.1 |  N/D  | Stock Reserve
-[stock_reserve_sale](stock_reserve_sale/) | 0.1 |  N/D  | Stock Reserve Sales
+[stock_available](stock_available/) | 2.0 | :repeat: | Stock available to promise
+[stock_available_immediately](stock_available_immediately/) | 2.0 | :repeat: | Ignore planned receptions in quantity available to promise
+[stock_available_mrp](stock_available_mrp/) | 2.0 | :repeat: | Consider the production potential is available to promise
+[stock_available_sale](stock_available_sale/) | 2.0 | :repeat: | Quotations in quantity available to promise
+[stock_inventory_hierarchical](stock_inventory_hierarchical/) | 1.1 | :repeat: | Group several Physical Inventories in a master inventory
+[stock_inventory_hierarchical_location](stock_inventory_hierarchical_location/) | 1.1 | :repeat: | Extra consistency checks
+[stock_inventory_location](stock_inventory_location/) | 1.1 | :repeat: | Remove from the stock what is not in the Physical Inventory.
+[stock_location_inactive](stock_location_inactive/) | 0.1 | :repeat: | Stock Location Inactive
+[stock_location_ownership](stock_location_ownership/) | 0.1 | :repeat: | Stock Location Ownership
+[stock_location_search_stock](stock_location_search_stock/) | 1.0 | :repeat: | Stock Location Search Stock Quantities
+[stock_lot_valuation](stock_lot_valuation/) | 0.1 | :repeat: | Lot Valuation
+[stock_optional_valuation](stock_optional_valuation/) | 0.1 | :repeat: | Stock optional valuation
+[stock_orderpoint_generator](stock_orderpoint_generator/) | 1.0 | :repeat: | Mass configuration of stock order points
+[stock_reord_rule](stock_reord_rule/) | 0.2 | :repeat: | Improved reordering rules
+[stock_reserve](stock_reserve/) | 0.1 | :repeat: | Stock Reserve
+[stock_reserve_sale](stock_reserve_sale/) | 0.1 | :repeat: | Stock Reserve Sales
 
 [//]: # (end addons)
 
