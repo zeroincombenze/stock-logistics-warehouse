@@ -35,10 +35,12 @@ Installation
 
 
 
+
 To install this module, just click the install button.
 
 Configuration
 -------------
+
 
 
 
@@ -60,6 +62,8 @@ Usage
 
 -----
 
+-----
+
 =====
 
 To use this module, you need to:
@@ -75,8 +79,10 @@ Known issues / Roadmap
 ----------------------
 
 
+
 Bug Tracker
 -----------
+
 
 
 
@@ -93,10 +99,13 @@ Credits
 -------
 
 
+
 [![Odoo Italia Associazione]]
 
 
+
 ### Contributors
+
 
 
 
@@ -108,6 +117,8 @@ Credits
 ### Funders
 
 ### Maintainer
+
+
 
 
 
