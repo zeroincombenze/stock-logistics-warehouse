@@ -40,11 +40,15 @@ Installation
 ------------
 
 
+
 Configuration
 -------------
 
 
+
 Usage
+-----
+
 -----
 
 -----
@@ -53,8 +57,10 @@ Known issues / Roadmap
 ----------------------
 
 
+
 Bug Tracker
 -----------
+
 
 
 Credits
@@ -62,10 +68,13 @@ Credits
 
 
 
+
 [![Odoo Italia Associazione]]
 
 
+
 ### Contributors
+
 
 
 * Loïc Bellier (Numérigraphe) <lb@numerigraphe.com>
@@ -74,6 +83,8 @@ Credits
 ### Funders
 
 ### Maintainer
+
+
 
 
 
