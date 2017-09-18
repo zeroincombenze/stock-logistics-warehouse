@@ -28,12 +28,16 @@ Installation
 
 
 
+
 Configuration
 -------------
 
 
 
+
 Usage
+-----
+
 -----
 
 -----
@@ -48,6 +52,7 @@ Usage
 
 Known issues / Roadmap
 ----------------------
+
 
 
 
@@ -80,6 +85,7 @@ Bug Tracker
 
 
 
+
 Bugs are tracked on `GitHub Issues
 <https://github.com/OCA/stock-logistics-warehouse/issues>`_. In case of trouble, please
 check there if your issue has already been reported. If you spotted it first,
@@ -95,11 +101,14 @@ Credits
 
 
 
+
 [![Odoo Italia Associazione]]
 
 
 
+
 ### Contributors
+
 
 
 
@@ -111,6 +120,8 @@ Credits
 ### Funders
 
 ### Maintainer
+
+
 
 
 

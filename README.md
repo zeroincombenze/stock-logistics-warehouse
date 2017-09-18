@@ -66,7 +66,7 @@ addon | version | OCA version | summary
 [stock_optional_valuation](stock_optional_valuation/) | 0.1 (unported) | :repeat: | Stock optional valuation
 [stock_orderpoint_creator](stock_orderpoint_creator/) | 1.0 (unported) | :repeat: | Configuration of order point in mass
 [stock_partner_lot](stock_partner_lot/) | 9.0.1.0.0 (unported) | :repeat: | Show lots on the partners that own them
-[stock_quant_manual_assign](stock_quant_manual_assign/) | 8.0.1.0.0 (unported) | :repeat: | Stock - Manual assignment of quants
+[stock_quant_manual_assign](stock_quant_manual_assign/) | 8.0.1.0.0 (unported) | 10.0.1.0.0 | Stock - Manual assignment of quants
 [stock_reord_rule](stock_reord_rule/) | 0.2 (unported) | :repeat: | Improved reordering rules
 [stock_reserve_sale](stock_reserve_sale/) | 8.0.1.0.0 (unported) | :repeat: | Stock Reserve Sales
 
