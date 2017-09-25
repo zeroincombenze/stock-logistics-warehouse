@@ -50,13 +50,17 @@ Installation
 
 
 
+
 Configuration
 -------------
 
 
 
 
+
 Usage
+-----
+
 -----
 
 -----
@@ -91,8 +95,10 @@ Known issues / Roadmap
 
 
 
+
 Bug Tracker
 -----------
+
 
 
 
@@ -110,7 +116,9 @@ Credits
 
 
 
+
 [![Odoo Italia Associazione]]
+
 
 
 
@@ -121,11 +129,14 @@ Credits
 
 
 
+
 * Florian da Costa <florian.dacosta@akretion.com>
 
 ### Funders
 
 ### Maintainer
+
+
 
 
 

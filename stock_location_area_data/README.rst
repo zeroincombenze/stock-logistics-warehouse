@@ -26,6 +26,7 @@ Installation
 
 
 
+
 To install this module, you just need to select the module and insure yourself dependencies are available
 
 Configuration
@@ -35,9 +36,12 @@ Configuration
 
 
 
+
 No particular configuration to use this module
 
 Usage
+-----
+
 -----
 
 -----
@@ -57,10 +61,12 @@ Known issues / Roadmap
 
 
 
+
 * n/a
 
 Bug Tracker
 -----------
+
 
 
 
@@ -71,12 +77,15 @@ Credits
 
 
 
+
 [![Odoo Italia Associazione]]
 
 
 
 
+
 ### Contributors
+
 
 
 
@@ -93,6 +102,8 @@ Credits
 ### Funders
 
 ### Maintainer
+
+
 
 
 

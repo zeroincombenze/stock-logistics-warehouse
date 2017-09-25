@@ -34,6 +34,7 @@ Installation
 
 
 
+
 To install this module, you just need to select the module and ensure yourself dependencies are available.
 
 Configuration
@@ -43,10 +44,13 @@ Configuration
 
 
 
+
 * Add users to the group "Sales Pricelists" or "Purchase Pricelists" to view the stock location properties on the partner view.
 * In the company form, select the default customer and supplier locations. This will set the default parent locations for the partner locations.
 
 Usage
+-----
+
 -----
 
 -----
@@ -74,14 +78,17 @@ Known issues / Roadmap
 
 
 
+
 Bug Tracker
 -----------
 
 
 
 
+
 Credits
 -------
+
 
 
 
@@ -94,7 +101,9 @@ Module developed and tested with Odoo version 8.0
 
 
 
+
 ### Contributors
+
 
 
 
@@ -108,6 +117,8 @@ Module developed and tested with Odoo version 8.0
 ### Funders
 
 ### Maintainer
+
+
 
 
 
