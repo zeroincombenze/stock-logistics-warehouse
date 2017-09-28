@@ -13,6 +13,7 @@
 ================================================================================================
 
 Odoo Stock Logistic Warehouse
+=============================
 
 
 This project aim to deal with modules related to the management of warehouses. You'll find modules that:
