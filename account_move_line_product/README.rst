@@ -16,6 +16,7 @@
    :alt: License: AGPL-3
 
 Account Move Line Product
+=========================
 
 This module enhances the views associated to account moves and account move
 lines to display the product that is associated to the move line.
@@ -38,6 +39,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -86,7 +89,6 @@ Images
 
 * Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
 
-[![Odoo Italia Associazione]]
 
 
 

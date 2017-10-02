@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Stock Operation Package Mandatory
+=================================
 
 Makes destination package mandatory on stock pack operations
 
@@ -38,6 +39,8 @@ On picking types you want, check the 'Destination Package Mandatory' box
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -90,7 +93,6 @@ Images
 
 * Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
 
-[![Odoo Italia Associazione]]
 
 
 

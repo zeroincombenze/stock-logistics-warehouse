@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Ignore planned receptions in quantity available to promise
+==========================================================
 
 Normally the quantity available to promise is based on the virtual stock,
 which includes both planned outgoing and incoming goods.
@@ -36,6 +37,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -84,7 +87,6 @@ Images
 
 * Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
 
-[![Odoo Italia Associazione]]
 
 
 

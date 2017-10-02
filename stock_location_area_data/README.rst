@@ -50,6 +50,8 @@ Usage
 
 -----
 
+-----
+
 =====
 
 * n/a
@@ -78,7 +80,6 @@ Credits
 
 
 
-[![Odoo Italia Associazione]]
 
 
 

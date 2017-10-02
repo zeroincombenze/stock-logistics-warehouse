@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Stock available to promise
+==========================
 
 This module proposes several options to compute the quantity available to
 promise for each product.
@@ -49,6 +50,8 @@ In case of "Include the production potential", it is also possible to configure
 which field of product to use to compute the production potential.
 
 Usage
+-----
+
 -----
 
 -----
@@ -101,7 +104,6 @@ Images
 
 * Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
 
-[![Odoo Italia Associazione]]
 
 
 

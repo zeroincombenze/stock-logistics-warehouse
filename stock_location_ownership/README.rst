@@ -14,6 +14,7 @@
 =========================
 
 Stock Location Ownership
+========================
 
 Adds an ownership on the stock locations
 
@@ -33,6 +34,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -72,7 +75,6 @@ Credits
 
 
 
-[![Odoo Italia Associazione]]
 
 
 

@@ -14,6 +14,7 @@
 =========================
 
 Stock Reserve Sale
+==================
 
 Allows to create stock reservations for quotation lines before the
 confirmation of the quotation. The reservations might have a validity
@@ -65,6 +66,8 @@ Usage
 
 -----
 
+-----
+
 Known issues / Roadmap
 ----------------------
 
@@ -94,7 +97,6 @@ Credits
 
 
 
-[![Odoo Italia Associazione]]
 
 
 

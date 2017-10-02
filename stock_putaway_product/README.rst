@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Putaway strategy per product
+============================
 
 This module extends the functionality of the odoo putaway strategy.
 It defines a new type of putaway strategy where users can set a specific
@@ -72,6 +73,8 @@ Usage
 
 -----
 
+-----
+
 =====
 
 To use this module, you need to:
@@ -114,7 +117,6 @@ Credits
 
 
 
-[![Odoo Italia Associazione]]
 
 
 

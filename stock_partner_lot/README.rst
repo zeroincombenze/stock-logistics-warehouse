@@ -15,6 +15,7 @@
     :alt: License: AGPL-3
 
 Show lots on the partners that own them
+=======================================
 
 This module lets users view which lots have been transferred to each partner and
 search accordingly.
@@ -34,6 +35,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -85,7 +88,6 @@ Images
 
 * Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
 
-[![Odoo Italia Associazione]]
 
 
 

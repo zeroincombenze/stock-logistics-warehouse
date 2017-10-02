@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Manual assignment of quants
+===========================
 
 With this module, user can manually change the automatic selection of quants.
 
@@ -33,6 +34,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -87,7 +90,6 @@ Credits
 
 
 
-[![Odoo Italia Associazione]]
 
 
 

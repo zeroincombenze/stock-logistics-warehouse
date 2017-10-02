@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Consider the production potential is available to promise
+=========================================================
 
 This module takes the potential quantities available for Products into account in
 the quantity available to promise, where the "Potential quantity" is the
@@ -38,6 +39,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -109,7 +112,6 @@ Credits
 
 
 
-[![Odoo Italia Associazione]]
 
 
 

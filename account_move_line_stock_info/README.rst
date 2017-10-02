@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Account Move Line Stock Move
+============================
 
 This module adds the stock move to the account move lines that it generates.
 
@@ -33,6 +34,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -86,7 +89,6 @@ Credits
 
 
 
-[![Odoo Italia Associazione]]
 
 
 

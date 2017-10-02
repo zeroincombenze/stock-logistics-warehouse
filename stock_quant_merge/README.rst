@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Quant merge
+===========
 
 Odoo splits quants each time a reservation is done: this module makes Odoo
 merge them back if they still meet the following requirements:
@@ -39,6 +40,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -85,7 +88,6 @@ Credits
 
 
 
-[![Odoo Italia Associazione]]
 
 
 

@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Stock Available Unreserved
+==========================
 
 This module allows users to check the quantity of a stocked product that is
 available on-hand, and that has not yet been reserved for use anywhere else.
@@ -43,6 +44,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -92,7 +95,6 @@ Images
 
 * Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
 
-[![Odoo Italia Associazione]]
 
 
 

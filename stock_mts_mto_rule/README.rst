@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Stock MTS+MTO Rule
+==================
 
 This module add a Make To Stock + Make to Order Route.
 
@@ -59,6 +60,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -117,7 +120,6 @@ Credits
 
 
 
-[![Odoo Italia Associazione]]
 
 
 

@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Stock Quant Reserved Qty UoM
+============================
 
 This module allows to display the quantity of a quant in the unit of measure
 defined in the reservation move.
@@ -34,6 +35,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -82,7 +85,6 @@ Images
 
 * Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
 
-[![Odoo Italia Associazione]]
 
 
 

@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Partner Location Auto Create
+============================
 
 This module allows to create locations automatically when creating a partner.
 One use case of this feature is to allow a company not only to manage the stocks
@@ -49,6 +50,8 @@ Configuration
 * In the company form, select the default customer and supplier locations. This will set the default parent locations for the partner locations.
 
 Usage
+-----
+
 -----
 
 -----
@@ -96,7 +99,6 @@ Credits
 
 Module developed and tested with Odoo version 8.0
 
-[![Odoo Italia Associazione]]
 
 
 

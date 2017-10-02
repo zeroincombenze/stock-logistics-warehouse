@@ -15,6 +15,7 @@
    :alt: License: AGPL-3
 
 Stock Change Quantity Reason
+============================
 
 This module extends the product stock management and allows to set a reason
 in the wizard when changing the product quantity.
@@ -37,6 +38,8 @@ Configuration
 
 
 Usage
+-----
+
 -----
 
 -----
@@ -85,7 +88,6 @@ Images
 
 * Odoo Community Association: `Icon <https://github.com/OCA/maintainer-tools/blob/master/template/module/static/description/icon.svg>`_.
 
-[![Odoo Italia Associazione]]
 
 
 

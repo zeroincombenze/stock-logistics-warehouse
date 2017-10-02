@@ -51,6 +51,8 @@ Usage
 
 -----
 
+-----
+
 =====
 
 To use this module, you need to :
@@ -81,7 +83,6 @@ Credits
 
 
 
-[![Odoo Italia Associazione]]
 
 
 
