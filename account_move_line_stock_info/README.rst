@@ -46,6 +46,8 @@ Usage
 
 -----
 
+-----
+
 =====
 
 * The stock manager can check the journal items by accessing to 'Inventory >

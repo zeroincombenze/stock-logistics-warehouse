@@ -62,6 +62,8 @@ Usage
 
 -----
 
+-----
+
 =====
 
 This module adds a field named `Available for sale` on the Product form.

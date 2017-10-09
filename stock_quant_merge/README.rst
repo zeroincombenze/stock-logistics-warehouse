@@ -52,6 +52,8 @@ Usage
 
 -----
 
+-----
+
 =====
 
 The merge is done automatically when a reservation is undone. No user intervention is needed.
