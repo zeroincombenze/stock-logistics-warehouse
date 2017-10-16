@@ -43,17 +43,11 @@ No particular configuration to use this module
 Usage
 -----
 
------
 
------
 
------
 
------
 
------
 
------
 
 =====
 

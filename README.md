@@ -43,7 +43,7 @@ addon | version | OCA version | summary
 [stock_change_qty_reason](stock_change_qty_reason/) | 10.0.1.0.0 | :repeat: | Stock Quantity Change Reason
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 10.0.1.0.0 | :repeat: | Add a MTS+MTO route
 [stock_operation_package_mandatory](stock_operation_package_mandatory/) | 10.0.1.0.0 | :repeat: | Makes destination package mandatory on stock pack operations
-[stock_putaway_product](stock_putaway_product/) | 10.0.1.0.0 | :repeat: | Set a product location and put-away strategy per product
+[stock_putaway_product](stock_putaway_product/) | 10.0.1.0.0 | 10.0.1.0.1 | Set a product location and put-away strategy per product
 [stock_quant_merge](stock_quant_merge/) | 10.0.1.0.0 | :repeat: | Stock - Quant merge
 [stock_quant_reserved_qty_uom](stock_quant_reserved_qty_uom/) | 10.0.1.0.0 | :repeat: | Stock Quant Reserved Qty UoM
 [stock_reserve](stock_reserve/) | 10.0.1.0.0 | :repeat: | Stock reservations on products
@@ -57,7 +57,7 @@ addon | version | OCA version | summary
 [configurable_stock_level](configurable_stock_level/) | 0.1 (unported) | :repeat: | name
 [partner_location_auto_create](partner_location_auto_create/) | 0.1 (unported) | :repeat: | Partner Location Auto Create
 [stock_available_mrp](stock_available_mrp/) | 9.0.1.0.0 (unported) | :repeat: | Consider the production potential is available to promise
-[stock_available_sale](stock_available_sale/) | 2.0 (unported) | :repeat: | Quotations in quantity available to promise
+[stock_available_sale](stock_available_sale/) | 2.0 (unported) | 10.0.1.0.0 | Quotations in quantity available to promise
 [stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 8.0.1.0.0 (unported) | :repeat: | More filters for inventory adjustments
 [stock_location_area_data](stock_location_area_data/) | 8.0.0.1.0 (unported) | :repeat: | Add surface units of measure
 [stock_location_area_management](stock_location_area_management/) | 8.0.0.1.0 (unported) | :repeat: | Enter a location's area based on different units of measure
