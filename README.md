@@ -8,9 +8,51 @@
 [![try it](http://www.zeroincombenze.it/wp-content/uploads/ci-ct/prd/button-try-it-10.svg)](http://erp10.zeroincombenze.it)
 
 
-[![en](https://github.com/zeroincombenze/grymb/blob/master/flags/en_US.png)](https://www.facebook.com/groups/openerp.italia/)
-================================================================================================
-================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
 
 Odoo Stock Logistic Warehouse
 =============================
@@ -37,11 +79,11 @@ addon | version | OCA version | summary
 --- | --- | --- | ---
 [account_move_line_product](account_move_line_product/) | 10.0.1.0.0 | :repeat: | Displays the product in the journal entries and items
 [account_move_line_stock_info](account_move_line_stock_info/) | 10.0.1.0.0 | :repeat: | Account Move Line Stock Move
-[stock_available](stock_available/) | 10.0.1.0.0 | :repeat: | Stock available to promise
+[stock_available](stock_available/) | 10.0.1.0.0 | 10.0.1.0.1 | Stock available to promise
 [stock_available_immediately](stock_available_immediately/) | 10.0.1.0.0 | :repeat: | Ignore planned receptions in quantity available to promise
 [stock_available_unreserved](stock_available_unreserved/) | 10.0.1.0.0 | :repeat: | Quantity of stock available for immediate use
 [stock_change_qty_reason](stock_change_qty_reason/) | 10.0.1.0.0 | :repeat: | Stock Quantity Change Reason
-[stock_mts_mto_rule](stock_mts_mto_rule/) | 10.0.1.0.0 | :repeat: | Add a MTS+MTO route
+[stock_mts_mto_rule](stock_mts_mto_rule/) | 10.0.1.0.0 | 10.0.1.0.1 | Add a MTS+MTO route
 [stock_operation_package_mandatory](stock_operation_package_mandatory/) | 10.0.1.0.0 | :repeat: | Makes destination package mandatory on stock pack operations
 [stock_putaway_product](stock_putaway_product/) | 10.0.1.0.0 | 10.0.1.0.1 | Set a product location and put-away strategy per product
 [stock_quant_merge](stock_quant_merge/) | 10.0.1.0.0 | :repeat: | Stock - Quant merge
@@ -58,7 +100,7 @@ addon | version | OCA version | summary
 [partner_location_auto_create](partner_location_auto_create/) | 0.1 (unported) | :repeat: | Partner Location Auto Create
 [stock_available_mrp](stock_available_mrp/) | 9.0.1.0.0 (unported) | :repeat: | Consider the production potential is available to promise
 [stock_available_sale](stock_available_sale/) | 2.0 (unported) | 10.0.1.0.0 | Quotations in quantity available to promise
-[stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 8.0.1.0.0 (unported) | :repeat: | More filters for inventory adjustments
+[stock_inventory_preparation_filter](stock_inventory_preparation_filter/) | 8.0.1.0.0 (unported) | 10.0.1.0.0 | More filters for inventory adjustments
 [stock_location_area_data](stock_location_area_data/) | 8.0.0.1.0 (unported) | :repeat: | Add surface units of measure
 [stock_location_area_management](stock_location_area_management/) | 8.0.0.1.0 (unported) | :repeat: | Enter a location's area based on different units of measure
 [stock_location_ownership](stock_location_ownership/) | 8.0.0.1.0 (unported) | :repeat: | Stock Location Ownership
