@@ -56,6 +56,8 @@
 
 
 
+
+
 [![en](http://www.shs-av.com/wp-content/en_US.png)](http://wiki.zeroincombenze.org/it/Odoo/7.0/man)
 
 Odoo Stock Logistic Warehouse
@@ -85,7 +87,7 @@ addon | version | OCA version | summary
 [account_move_line_stock_info](account_move_line_stock_info/) | 10.0.1.0.0 | :repeat: | Account Move Line Stock Move
 [stock_available](stock_available/) | 10.0.1.0.0 | 10.0.1.0.1 | Stock available to promise
 [stock_available_immediately](stock_available_immediately/) | 10.0.1.0.0 | :repeat: | Ignore planned receptions in quantity available to promise
-[stock_available_unreserved](stock_available_unreserved/) | 10.0.1.0.0 | :repeat: | Quantity of stock available for immediate use
+[stock_available_unreserved](stock_available_unreserved/) | 10.0.1.0.0 | 10.0.1.0.1 | Quantity of stock available for immediate use
 [stock_change_qty_reason](stock_change_qty_reason/) | 10.0.1.0.0 | :repeat: | Stock Quantity Change Reason
 [stock_mts_mto_rule](stock_mts_mto_rule/) | 10.0.1.0.0 | 10.0.1.0.1 | Add a MTS+MTO route
 [stock_operation_package_mandatory](stock_operation_package_mandatory/) | 10.0.1.0.0 | :repeat: | Makes destination package mandatory on stock pack operations
