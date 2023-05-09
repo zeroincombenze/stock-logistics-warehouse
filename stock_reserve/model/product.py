@@ -1,40 +1,61 @@
-# -*- coding: utf-8 -*-
-##############################################################################
-#
-#    Author: Guewen Baconnier
-#    Copyright 2013 Camptocamp SA
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as
-#    published by the Free Software Foundation, either version 3 of the
-#    License, or (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-#
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-##############################################################################
-
-from openerp.osv import orm
+# Copyright 2013 Camptocamp SA - Guewen Baconnier
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+from odoo import fields, models
 
 
-class product_product(orm.Model):
-    _inherit = 'product.product'
+class ProductTemplate(models.Model):
+    _inherit = "product.template"
 
-    def open_stock_reservation(self, cr, uid, ids, context=None):
-        assert len(ids) == 1, "Expected 1 ID, got %r" % ids
-        mod_obj = self.pool.get('ir.model.data')
-        act_obj = self.pool.get('ir.actions.act_window')
-        get_ref = mod_obj.get_object_reference
-        __, action_id = get_ref(cr, uid, 'stock_reserve',
-                                'action_stock_reservation')
-        action = act_obj.read(cr, uid, action_id, context=context)
-        action['context'] = {'search_default_draft': 1,
-                             'search_default_reserved': 1,
-                             'default_product_id': ids[0],
-                             'search_default_product_id': ids[0]}
-        return action
+    reservation_count = fields.Float(
+        compute="_compute_reservation_count", string="# Sales"
+    )
+
+    def _compute_reservation_count(self):
+        for product in self:
+            product.reservation_count = sum(
+                product.product_variant_ids.mapped("reservation_count")
+            )
+
+    def action_view_reservations(self):
+        self.ensure_one()
+        action_dict = self.env["ir.actions.act_window"]._for_xml_id(
+            "stock_reserve.action_stock_reservation_tree"
+        )
+        product_ids = self.mapped("product_variant_ids.id")
+        action_dict["domain"] = [("product_id", "in", product_ids)]
+        action_dict["context"] = {
+            "search_default_draft": 1,
+            "search_default_reserved": 1,
+            "default_product_id": self.product_variant_ids[0].id,
+        }
+        return action_dict
+
+
+class ProductProduct(models.Model):
+    _inherit = "product.product"
+
+    reservation_count = fields.Float(
+        compute="_compute_reservation_count", string="# Sales"
+    )
+
+    def _compute_reservation_count(self):
+        for product in self:
+            domain = [
+                ("product_id", "=", product.id),
+                ("state", "in", ["draft", "assigned"]),
+            ]
+            reservations = self.env["stock.reservation"].search(domain)
+            product.reservation_count = sum(reservations.mapped("product_qty"))
+
+    def action_view_reservations(self):
+        self.ensure_one()
+        action_dict = self.env["ir.actions.act_window"]._for_xml_id(
+            "stock_reserve.action_stock_reservation_tree"
+        )
+        action_dict["domain"] = [("product_id", "=", self.id)]
+        action_dict["context"] = {
+            "search_default_draft": 1,
+            "search_default_reserved": 1,
+            "default_product_id": self.id,
+        }
+        return action_dict
