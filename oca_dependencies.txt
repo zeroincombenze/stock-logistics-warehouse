@@ -1,2 +1,8 @@
-stock-logistics-tracking
-stock-logistics-barcode
+account-analytic
+connector
+product-attribute
+sale-workflow
+server-env
+server-ux
+web
+wms

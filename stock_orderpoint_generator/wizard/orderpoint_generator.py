@@ -1,69 +1,42 @@
-# -*- coding: utf-8 -*-
-##############################################################################
-#
-#    Author: Yannick Vaucher (Camptocamp)
-#    Copyright 2012 Camptocamp SA
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as
-#    published by the Free Software Foundation, either version 3 of the
-#    License, or (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-#
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-##############################################################################
-
-""" Wizard defining stock.warehouse.orderpoint configurations for selected
-products. Those configs are generated using templates """
-
-from openerp.osv.orm import browse_record, TransientModel, fields
-
-_template_register = ['orderpoint_template_id']
+# Copyright 2012-2016 Camptocamp SA
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
 
 
-class OrderpointGenerator(TransientModel):
-    _name = 'stock.warehouse.orderpoint.generator'
-    _description = 'Orderpoint Generator'
+from odoo import _, fields, models
+from odoo.exceptions import UserError
 
-    _columns = {
-        'orderpoint_template_id': fields.many2many(
-            'stock.warehouse.orderpoint.template',
-            rel='order_point_generator_rel',
-            string='Stock rule template')
-    }
+_template_register = ["orderpoint_template_id"]
 
-    def _get_template_register(self):
-        """return a list of the field names which defines a template
-        This is a hook to allow expending the list of template"""
-        return _template_register
 
-    def action_configure(self, cr, uid, wiz_id, context=None):
-        """ action to retrieve wizard data and launch creation of items """
+class OrderpointGenerator(models.TransientModel):
+    """ Wizard defining stock.warehouse.orderpoint configurations for selected
+    products. Those configs are generated using templates
+    """
 
-        product_ids = context.get('active_ids')
-        assert product_ids
+    _name = "stock.warehouse.orderpoint.generator"
+    _description = "Orderpoint Generator"
 
-        if isinstance(wiz_id, list):
-            wiz_id = wiz_id[0]
-        this = self.browse(cr, uid, wiz_id, context=context)
-        for template_field in self._get_template_register():
-            template_br_list = this[template_field]
-            if template_br_list:
-                if isinstance(template_br_list, browse_record):
-                    template_br_list = [template_br_list]
-                template_model = template_br_list[0]._model._name
-                template_obj = self.pool.get(template_model)
-                template_obj._disable_old_instances(cr, uid, template_br_list,
-                                                    product_ids,
-                                                    context=context)
-                for template_br in template_br_list:
-                    template_obj.create_instances(cr, uid, template_br,
-                                                  product_ids, context=context)
+    orderpoint_template_id = fields.Many2many(
+        comodel_name="stock.warehouse.orderpoint.template",
+        relation="order_point_generator_rel",
+        string="Reordering Rule Templates",
+    )
 
-        return {}
+    def action_configure(self):
+        """Action to retrieve wizard data and launch creation of items."""
+        self.ensure_one()
+        model_obj = self.env[self.env.context.get("active_model")]
+        record_ids = model_obj.browse(self.env.context.get("active_ids"))
+        if not record_ids:
+            return model_obj
+        if self.env.context.get("active_model") == "product.template":
+            product_ids = record_ids.mapped("product_variant_ids")
+            if len(product_ids) != len(record_ids):
+                raise UserError(
+                    _(
+                        "Cannot apply because some of selected "
+                        "products has multiple variants."
+                    )
+                )
+            record_ids = product_ids
+        self.orderpoint_template_id.create_orderpoints(record_ids)

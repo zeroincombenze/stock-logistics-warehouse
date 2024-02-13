@@ -1,110 +1,112 @@
-# -*- coding: utf-8 -*-
-##############################################################################
-#
-#    Author: Guewen Baconnier
-#    Copyright 2013 Camptocamp SA
-#
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as
-#    published by the Free Software Foundation, either version 3 of the
-#    License, or (at your option) any later version.
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-#
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-##############################################################################
-
-from openerp.osv import orm, fields
+# Copyright 2013 Camptocamp SA - Guewen Baconnier
+# License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
+from odoo import _, api, exceptions, fields, models
 
 
-class sale_stock_reserve(orm.TransientModel):
-    _name = 'sale.stock.reserve'
+class SaleStockReserve(models.TransientModel):
+    _name = "sale.stock.reserve"
+    _description = "Sale Stock Reserve"
 
-    _columns = {
-        'location_id': fields.many2one(
-            'stock.location',
-            'Source Location',
-            required=True),
-        'location_dest_id': fields.many2one(
-            'stock.location',
-            'Reservation Location',
-            required=True,
-            help="Location where the system will reserve the "
-                 "products."),
-        'date_validity': fields.date(
-            "Validity Date",
-            help="If a date is given, the reservations will be released "
-                 "at the end of the validity."),
-        'note': fields.text('Notes'),
-    }
+    @api.model
+    def _default_location_id(self):
+        return self.env["stock.reservation"].get_location_from_ref(
+            "stock.stock_location_stock"
+        )
 
-    def _default_location_id(self, cr, uid, context=None):
-        reserv_obj = self.pool.get('stock.reservation')
-        return reserv_obj._default_location_id(cr, uid, context=context)
+    @api.model
+    def _default_location_dest_id(self):
+        return self.env["stock.reservation"]._default_location_dest_id()
 
-    def _default_location_dest_id(self, cr, uid, context=None):
-        reserv_obj = self.pool.get('stock.reservation')
-        return reserv_obj._default_location_dest_id(cr, uid, context=context)
+    def _default_owner(self):
+        """If sale_owner_stock_sourcing is installed, it adds an owner field
+        on sale order lines. Use it.
 
-    _defaults = {
-        'location_id': _default_location_id,
-        'location_dest_id': _default_location_dest_id,
-    }
+        """
+        model = self.env[self.env.context["active_model"]]
+        if model._name == "sale.order":
+            lines = model.browse(self.env.context["active_id"]).order_line
+        else:
+            lines = model.browse(self.env.context["active_ids"])
 
-    def _prepare_stock_reservation(self, cr, uid, form, line, context=None):
-        product_uos = line.product_uos.id if line.product_uos else False
-        return {'product_id': line.product_id.id,
-                'product_uom': line.product_uom.id,
-                'product_qty': line.product_uom_qty,
-                'date_validity': form.date_validity,
-                'name': u"{} ({})".format(line.order_id.name, line.name),
-                'location_id': form.location_id.id,
-                'location_dest_id': form.location_dest_id.id,
-                'note': form.note,
-                'product_uos_qty': line.product_uos_qty,
-                'product_uos': product_uos,
-                'price_unit': line.price_unit,
-                'sale_line_id': line.id,
-                }
+        try:
+            owners = {l.stock_owner_id for l in lines}
+        except AttributeError:
+            return self.env["res.partner"]
+            # module sale_owner_stock_sourcing not installed, fine
 
-    def stock_reserve(self, cr, uid, ids, line_ids, context=None):
-        assert len(ids) == 1, "Expected 1 ID, got %r" % ids
-        reserv_obj = self.pool.get('stock.reservation')
-        line_obj = self.pool.get('sale.order.line')
+        if len(owners) == 1:
+            return owners.pop()
+        elif len(owners) > 1:
+            raise exceptions.Warning(
+                _(
+                    """The lines have different owners. Please reserve them
+                    individually with the reserve button on each one."""
+                )
+            )
 
-        form = self.browse(cr, uid, ids[0], context=context)
-        lines = line_obj.browse(cr, uid, line_ids, context=context)
+        return self.env["res.partner"]
+
+    location_id = fields.Many2one(
+        "stock.location", "Source Location", required=True, default=_default_location_id
+    )
+    location_dest_id = fields.Many2one(
+        "stock.location",
+        "Reservation Location",
+        required=True,
+        help="Location where the system will reserve the " "products.",
+        default=_default_location_dest_id,
+    )
+    date_validity = fields.Date(
+        "Validity Date",
+        help="If a date is given, the reservations will be released "
+        "at the end of the validity.",
+    )
+    note = fields.Text("Notes")
+    owner_id = fields.Many2one("res.partner", "Stock Owner", default=_default_owner)
+
+    def _prepare_stock_reservation(self, line):
+        self.ensure_one()
+        return {
+            "product_id": line.product_id.id,
+            "product_uom": line.product_uom.id,
+            "product_uom_qty": line.product_uom_qty,
+            "date_validity": self.date_validity,
+            "name": "{} ({})".format(line.order_id.name, line.name),
+            "location_id": self.location_id.id,
+            "location_dest_id": self.location_dest_id.id,
+            "note": self.note,
+            "price_unit": line.price_unit,
+            "sale_line_id": line.id,
+            "restrict_partner_id": self.owner_id.id,
+        }
+
+    def stock_reserve(self, line_ids):
+        self.ensure_one()
+
+        lines = self.env["sale.order.line"].browse(line_ids)
         for line in lines:
             if not line.is_stock_reservable:
                 continue
-            vals = self._prepare_stock_reservation(cr, uid, form, line,
-                                                   context=context)
-            reserv_id = reserv_obj.create(cr, uid, vals, context=context)
-            reserv_obj.reserve(cr, uid, [reserv_id], context=context)
+            vals = self._prepare_stock_reservation(line)
+            reserv = self.env["stock.reservation"].create(vals)
+            reserv.reserve()
         return True
 
-    def button_reserve(self, cr, uid, ids, context=None):
-        assert len(ids) == 1, "Expected 1 ID, got %r" % ids
-        if context is None:
-            context = {}
-        close = {'type': 'ir.actions.act_window_close'}
-        active_model = context.get('active_model')
-        active_ids = context.get('active_ids')
+    def button_reserve(self):
+        env = self.env
+        self.ensure_one()
+        close = {"type": "ir.actions.act_window_close"}
+        active_model = env.context.get("active_model")
+        active_ids = env.context.get("active_ids")
         if not (active_model and active_ids):
             return close
 
-        if active_model == 'sale.order':
-            sale_obj = self.pool.get('sale.order')
-            sales = sale_obj.browse(cr, uid, active_ids, context=context)
+        if active_model == "sale.order":
+            sales = env["sale.order"].browse(active_ids)
             line_ids = [line.id for sale in sales for line in sale.order_line]
 
-        if active_model == 'sale.order.line':
+        if active_model == "sale.order.line":
             line_ids = active_ids
 
-        self.stock_reserve(cr, uid, ids, line_ids, context=context)
+        self.stock_reserve(line_ids)
         return close
